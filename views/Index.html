@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password Generator</title>
+    <link rel="stylesheet" href="/public/styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Random Password Generator</h1>
+        <h3>Password</h3>
+        <form class="password-form">
+            <div>
+                <label for="">Numbers of Characters</label>
+                <input type="range" min="1" max="50" value="15" id="characterAmountRange">
+                <input type="number" min="1" max="50" value="15" id="characterAmountNumber">
+            </div>
+
+            <label for="includeUppercase">Include Uppercase</label>
+            <input type="checkbox" id="includeUppercase">
+            
+            <label for="includeNumbers">Include Numbers</label>
+            <input type="checkbox" id="includeNumbers">
+            
+            <label for="includeSymbols">Include Symbols</label>
+            <input type="checkbox" id="includeSymbols">
+
+            <button type="submit">Generate Password</button>
+        </form>
+    </div>
 </body>
 </html>

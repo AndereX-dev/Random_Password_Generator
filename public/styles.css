@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #006699;
+    --white: #ffffff;
+}
+
+body {
+    background-color: #333;
+    margin: 0;
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.container {
+    background-color: var(--primary-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.password-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
