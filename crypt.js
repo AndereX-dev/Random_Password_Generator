@@ -1,0 +1,1 @@
+crypto.createHash("md5").update(crypto.randomBytes(32)).digest("hex");
