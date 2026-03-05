@@ -10,24 +10,35 @@
 <body>
     <div class="container">
         <h1>Random Password Generator</h1>
-        <h3>Password</h3>
+
+        <div class="password-display" id="password-display">Click Generate Password</div>
+
         <form class="password-form">
-            <div>
+            <div class="setting-group">
                 <label for="">Numbers of Characters</label>
-                <input type="range" min="1" max="50" value="15" id="characterAmountRange">
-                <input type="number" min="1" max="50" value="15" id="characterAmountNumber">
+                <div class="range-container">
+                    <input type="range" min="1" max="50" value="15" id="characterAmountRange">
+                    <input type="number" min="1" max="50" value="15" id="characterAmountNumber">
+                </div>
             </div>
 
-            <label for="includeUppercase">Include Uppercase</label>
-            <input type="checkbox" id="includeUppercase">
-            
-            <label for="includeNumbers">Include Numbers</label>
-            <input type="checkbox" id="includeNumbers">
-            
-            <label for="includeSymbols">Include Symbols</label>
-            <input type="checkbox" id="includeSymbols">
+            <div class="checkbox-container">
+                <div class="checkbox-item">
+                    <label for="includeUppercase">Include Uppercase</label>
+                    <input type="checkbox" id="includeUppercase">
+                </div>
 
-            <button type="submit">Generate Password</button>
+                <div class="checkbox-item">
+                    <label for="includeNumbers">Include Numbers</label>
+                    <input type="checkbox" id="includeNumbers">
+                </div>
+
+                <div class="checkbox-item">
+                    <label for="includeSymbols">Include Symbols</label>
+                    <input type="checkbox" id="includeSymbols">
+                </div>
+            </div>
+            <button type="submit" class="btn">Generate Password</button>
         </form>
     </div>
 </body>
