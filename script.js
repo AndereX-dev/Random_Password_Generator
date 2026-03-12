@@ -63,10 +63,10 @@ copyBtn.addEventListener("click", () => {
     if (!password || password === "Click Generate Password") return
 
     navigator.clipboard.writeText(password).then(() => {
-        const originalText = copyBtn.innerText
+        const originalContent = copyBtn.innerText
         copyBtn.innerText = "Copied to clipboard!"
         setTimeout(() => {
-            copyBtn.innerText = originalText
+            copyBtn.innerText = originalContent
         }, 2000)
     })
 })
