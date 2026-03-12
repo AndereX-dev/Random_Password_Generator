@@ -101,9 +101,9 @@ h1 {
 
 .checkbox-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 15px;
-    margin: 1.5rem 0;
+    margin: 20px 0;
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
     border-radius: 8px;

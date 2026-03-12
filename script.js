@@ -1,5 +1,5 @@
 const characterAmountRange = document.getElementById("characterAmountRange");
-const characterAmounntNumber = document.getElementById("characterAmountNumber");
+const characterAmountNumber = document.getElementById("characterAmountNumber");
 
 function syncCharacterAmount(e) {
     const value = e.target.value
@@ -27,7 +27,7 @@ form.addEventListener("submit", e => {
     e.preventDefault()
     const characterAmount = characterAmountNumber.value
     const includeUppercase = includeUppercaseElement.checked
-    const includeNumbers = includeNubersElement.checked
+    const includeNumbers = includeNumbersElement.checked
     const includeSymbols = includeSymbolsElement.checked
     
     const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols)
