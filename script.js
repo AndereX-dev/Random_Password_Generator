@@ -60,13 +60,16 @@ const copyBtn = document.getElementById("copyBtn")
 
 copyBtn.addEventListener("click", () => {
     const password = passwordDisplay.innerText
-    if (!password || password === "Click Generate Password") return
+    if (!password || password === "Click Generate Password" || password === "✅ Copied!") return
 
     navigator.clipboard.writeText(password).then(() => {
-        const originalContent = copyBtn.innerText
-        copyBtn.innerText = "✅ Copied!"
+        const originalPassword = password
+        const originalColor = passwordDisplay.style.color
+        passwordDisplay.innerText = "✅ Copied!"
+        passwordDisplay.style.color = "white"
         setTimeout(() => {
-            copyBtn.innerText = originalContent
+            passwordDisplay.innerText = originalPassword
+            passwordDisplay.style.color = originalColor
         }, 2000)
     })
 })
